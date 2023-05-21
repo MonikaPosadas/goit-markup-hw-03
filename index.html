@@ -12,16 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
       body {
         font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 400;
       }
     </style>
   </head>
@@ -29,20 +25,22 @@
     <header>
       <nav class="main-navigation">
         <ul>
-          <li class="logo"><span>Web</span>studio</li>
-          <li>Agencja</li>
-          <li class="links"><a href="./portfolio.html">Portfolio</a></li>
-          <li>Kontakt</li>
+          <li class="logo" class="pointer"><span>Web</span>studio</li>
+          <li class="links" class="pointer"><a href="">Agencja</li>
+          <li class="links" class="pointer"><a href="./portfolio.html">Portfolio</a></li>
+          <li class="links" class="pointer"><a href="">Agencja</li>
         </ul>
       </nav>
-      <a class="link-header" href="mailto:info@devstudio.com"
+      <a class="pointer" class="link-header" href="mailto:info@devstudio.com"
         >info@devstudio.com</a
       >
       <a href="tel:+48111111111">+48111111111</a>
     </header>
     <main>
       <h1 class="main-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-      <button class="buttons" type="button">zamów usługę</button>
+      <button class="buttons" type="button" class="pointer" class="buttons-letter">
+        zamów usługę
+      </button>
       <ul>
         <li>
           <h4 class="article-title">LOREM IPSUM</h4>
@@ -167,8 +165,7 @@
     </main>
     <footer class="section-footer">
       <address class="address-1">m. Warszawa, Aleje Jerozolimskie 21</address>
-      <a class="link-footer" href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
+      <a href="mailto:info@devstudio.com" class="link-footer">info@devstudio.com</a
       >
       <a class="phone" href="tel:+48111111111">+48111111111</a>
     </footer>

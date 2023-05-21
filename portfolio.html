@@ -12,14 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-      :root {
-        background-color: #ffffff;
-        font-style: normal;
-        color: #212121;
-      }
       body {
-        font-family: "Roboto", sans-serif;
+     font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 400;
       }
     </style>
   </head>
@@ -28,11 +26,11 @@
       <nav class="main-navigation">
         <ul>
           <li>
-            <a href="./index.html" class="logo"><span>Web</span>studio</a>
+            <a href="./index.html" class="logo" class="pointer"><span>Web</span>studio</a>
           </li>
-          <li>Agencja</li>
+           <li class="links" class="pointer" ><a href="">Agencja</li>
           <li>Portfolio</li>
-          <li>Kontakt</li>
+           <li class="links" class="pointer" ><a href="">Agencja</li>
         </ul>
       </nav>
       <a class="link-header" href="mailto:info@devstudio.com"
@@ -43,19 +41,25 @@
     <main>
       <ul>
         <li>
-          <button class="buttons" type="button">Wszystkie</button>
+          <button class="buttons" type="button" class="pointer" class="buttons-letter">
+            Wszystkie
+          </button>
         </li>
         <li>
-          <button class="buttons" type="button">Strony</button>
+          <button class="buttons" type="button" class="pointer" class="buttons-letter">Strony</button>
         </li>
         <li>
-          <button class="buttons" type="button">Aplikacje</button>
+          <button class="buttons" type="button" class="pointer"class="buttons-letter">
+            Aplikacje
+          </button>
         </li>
         <li>
-          <button class="buttons" type="button">Dizajn</button>
+          <button class="buttons" type="button" class="pointer" class="buttons-letter">Dizajn</button>
         </li>
         <li>
-          <button class="buttons" type="button">Marketing</button>
+          <button class="buttons" type="button" class="pointer" class="buttons-letter">
+            Marketing
+          </button>
         </li>
       </ul>
       <ul>
@@ -189,7 +193,7 @@
     </main>
     <footer class="section-footer">
       <address class="address-1">m. Warszawa, Aleje Jerozolimskie 21</address>
-      <a class="link-footer" href="mailto:info@devstudio.com"
+      <a href="mailto:info@devstudio.com" class="link-footer" class="pointer"
         >info@devstudio.com</a
       >
       <a class="phone" href="tel:+48111111111">+48111111111</a>
