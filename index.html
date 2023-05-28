@@ -10,9 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
+      rel="stylesheet" />
+   <link rel="stylesheet" href=".css/normalizer.css" />
+     <style>
       body {
         font-family: "Roboto", sans-serif;
         font-style: normal;
@@ -22,27 +22,31 @@
   </head>
   <body>
     <header>
-      <nav class="main-navigation"><div class="container">
-        <ul>
+      <div class="container">
+      <nav class="main-navigation">
+        <ul class="menu-nav">
           <li class="logo" class="pointer"><span>Web</span>studio</li>
           <li class="links" class="pointer"><a href="">Agencja</li>
           <li class="links" class="pointer"><a href="./portfolio.html">Portfolio</a></li>
-          <li class="links" class="pointer"><a href="">Agencja</li>
-        </ul>
-        </div>
+          <li class="links" class="pointer"><a href="">Kontakt</li>
+          </ul>
       </nav>
-      <div class="container">
-      <a class="pointer" class="link-header" href="mailto:info@devstudio.com"
+      <a class="menu-nav" class="pointer" class="link-header" href="mailto:info@devstudio.com"
         >info@devstudio.com</a>
-      <a href="tel:+48111111111">+48111111111</a>
+      <a class="menu-nav" href="tel:+48111111111">+48111111111</a>
     </div>
     </header>
     <main>
-      <h1> class="main-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+      <section class="background-title">
+      <div class="container">
+      <h1 class="main-title" >EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
       <button class="buttons" type="button" class="pointer" class="buttons-letter">
         zamów usługę
       </button>
-     <ul>
+      </div>
+      </section>
+     <ul class="article-box">
+      <div class="container">
         <li>
           <h4 class="article-title">LOREM IPSUM</h4>
           <a class="article">
@@ -71,10 +75,12 @@
             arcu sem. Sed non sodales dui. Interdum et malesuada
           </a>
         </li>
+        </div>
       </ul>
       <section>
+        <div class="container">
         <h2 class="section-title">Czym się zajmujemy</h2>
-        <ul>
+        <ul class="images-service">
           <li>
             <img
               src="images/service-1.jpg"
@@ -102,9 +108,11 @@
           </li>
         </ul>
       </section>
-      <section>
+      </div>
+      <section class="section-team-images">
+        <div class="container">
         <h2 class="section-title">Nasz zespół</h2>
-        <ul>
+        <ul class="images-team">
           <li>
             <figure>
               <img
@@ -162,13 +170,16 @@
             </figure>
           </li>
         </ul>
+        </div>
       </section>
     </main>
-    <footer class="section-footer">
+      <footer class="section-footer">
+      <div class="container"> 
       <address class="address-1">m. Warszawa, Aleje Jerozolimskie 21</address>
       <a href="mailto:info@devstudio.com" class="link-footer">info@devstudio.com</a
       >
       <a class="phone" href="tel:+48111111111">+48111111111</a>
+    </div>
     </footer>
   </body>
 </html>
