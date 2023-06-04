@@ -4,10 +4,14 @@
   --background-color-light: #e5e5e5;
   --background-color-medium: #f5f4fa;
   --background-color-dark: #2f303a;
+  --color-primary: #2196f3;
+  --color-secondary: #ffffff;
+  --color-secondary-grey: #f5f4fa;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .section {
   padding-top: 94px;
@@ -40,27 +44,24 @@ li {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  text-decoration: none;
 }
-.menu-contact-1 {
-  display: flex;
-  align-items: baseline;
-  justify-content: flex-end;
-  gap: 50px;
-  padding-right: 50px;
+.menu-link:hover {
+  color: var(--color-primary);
 }
-.menu-contact-2 {
+.menu-contact-list {
   display: flex;
-  align-items: baseline;
-  justify-content: flex-end;
+  align-items: center;
   gap: 50px;
-  list-style: none;
-  padding-right: 50px;
 }
 .menu-contact-view {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--second-font-color);
+}
+.menu-contact-view:hover {
+  color: var(--color-primary);
 }
 .logo {
   font-family: "Raleway";
@@ -90,19 +91,24 @@ span {
   color: #ffffff;
   background: #2196f3;
   max-width: 200px;
-  height: 50px;
   text-align: center;
+  padding: 10px 42px 10px 42px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: none;
+  border-style: solid;
+  border-width: 0;
+  margin-top: 30px;
 }
 .main-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
   letter-spacing: 0.06em;
-  margin: 0;
   width: 696px;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
   color: #ffffff;
+  margin: 0;
 }
 .background-title {
   background-color: var(--background-color-dark);
@@ -145,23 +151,23 @@ span {
 .images-service {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 .section-team-images {
   background-color: var(--background-color-medium);
   padding-top: 94px;
   padding-bottom: 94px;
-  padding-right: 215px;
 }
 .images-team {
   display: flex;
   justify-content: space-between;
   margin: 0;
+  padding: 0;
 }
 .section-title-team {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  width: 210px;
   text-align: center;
   padding-bottom: 50px;
   color: var(--main-font-color);
@@ -173,6 +179,7 @@ span {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-font-color);
+  padding-top: 30px;
 }
 .team-image-title2 {
   font-weight: 400;
@@ -181,12 +188,17 @@ span {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-font-color);
+  padding-bottom: 30px;
 }
 .list-team-card {
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 94px;
   margin-left: 0px;
+}
+.team-card {
+  margin: 0;
+  background-color: var(--color-secondary);
 }
 .list-team-card :first-child {
   margin-left: 0px;
@@ -207,6 +219,7 @@ span {
   line-height: 1.19;
   padding-top: 60px;
   padding-left: 15px;
+  text-decoration: none;
 }
 .studio-footer {
   color: #ffffff;
@@ -234,34 +247,41 @@ span {
 .footer-portfolio-tel {
   margin: 0;
 }
-.portfolio-section {
-  display: flex;
-}
 .portfolio-buttons {
   display: flex;
   justify-content: center;
   gap: 8px;
+  margin: 0 0 50px 0;
 }
 .button-portfolio {
   cursor: pointer;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: 0 solid var(--color-secondary-grey);
+  background-color: var(--color-secondary-grey);
+  padding: 4px 16px 4px 16px;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  background: #f5f4fa;
-  border-radius: 4px;
-  border: #f5f4fa;
-  margin-bottom: 25.5px;
-  padding: 4px 16px 4px 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.button-portfolio:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
 }
 .figure-portfolio {
   margin: 0;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  padding-right: 18px;
-  padding-top: 19px;
-  padding-left: 18px;
-  text-align: left;
+  border: 1px solid #eeeeee;
 }
 .image-title {
   font-weight: 700;
@@ -269,6 +289,7 @@ span {
   line-height: 2;
   letter-spacing: 0.06em;
   margin: 0 0 4px 0;
+  padding: 20px 24px;
 }
 .image-title2 {
   font-weight: 400;
