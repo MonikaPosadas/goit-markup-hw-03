@@ -80,6 +80,8 @@ li {
   font-size: 26px;
   line-height: 1;
   letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--main-font-color);
 }
 span {
   font-family: "Raleway";
